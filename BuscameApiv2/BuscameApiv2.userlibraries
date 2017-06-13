@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="libs">
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.ejb.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.jms.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/org.restlet.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.servlet.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.resource.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.google.gson.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.annotation.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.persistence.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.servlet.jsp.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.transaction.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javassist-3.16.1-GA.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/orientdb-core-2.1.0.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/orientdb-client-2.1.0.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/orientdb-object-2.1.0.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/javax.servlet.jsp.jstl.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/org.restlet.ext.jackson.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.csv.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.xml.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/orientdb-enterprise-2.1.0.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.core.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.jaxb.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.yaml.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.smile.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.databind.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/org.codehaus.woodstox.stax2api.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.jsonschema.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/com.fasterxml.jackson.annotations.jar" />
+    <archive path="F:/Unicamp/Thesis_Master/Code/BuscameApiv2/libs/concurrentlinkedhashmap-lru-1.4.1.jar" />
+  </library>
+</eclipse-userlibraries>
+

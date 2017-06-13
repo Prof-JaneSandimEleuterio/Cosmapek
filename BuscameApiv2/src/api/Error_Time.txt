@@ -1,0 +1,182 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\ArchyWin>cd F:\Unicamp\Thesis_Master\Code\GeneratedJars\v3
+
+C:\Users\ArchyWin>F:
+
+F:\Unicamp\Thesis_Master\Code\GeneratedJars\v3>cd ApiBuscame_B_10000
+
+F:\Unicamp\Thesis_Master\Code\GeneratedJars\v3\ApiBuscame_B_10000>java -jar Busc
+ameApiv2.jar
+Feb 02, 2016 11:30:11 AM com.orientechnologies.common.log.OLogManager log
+INFO: OrientDB auto-config DISKCACHE=1,086MB (heap=896MB os=4,030MB disk=112,398
+MB)
+Starting the internal [HTTP/1.1] server on port 10000
+Starting api.ApiApplication application
+2016-02-02      11:49:40        0:0:0:0:0:0:0:1 -       -       10000   GET
+/v1/companies/3000/products/    -       200     -       0       141     http://l
+ocalhost:10000  Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, l
+ike Gecko) Chrome/47.0.2526.111 Safari/537.36 OPR/34.0.2036.50  -
+An exception occurred writing the response entity
+
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+  Location:
+    com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase.serializeFiel
+dsFiltered(Ljava/lang/Object;Lcom/fasterxml/jackson/core/JsonGenerator;Lcom/fast
+erxml/jackson/databind/SerializerProvider;)V @194: invokeinterface
+  Reason:
+    Type 'com/fasterxml/jackson/databind/ser/BeanPropertyWriter' (current frame,
+ stack[4]) is not assignable to 'com/fasterxml/jackson/databind/ser/PropertyWrit
+er'
+  Current Frame:
+    bci: @194
+    flags: { }
+    locals: { 'com/fasterxml/jackson/dataformat/xml/ser/XmlBeanSerializerBase',
+'java/lang/Object', 'com/fasterxml/jackson/core/JsonGenerator', 'com/fasterxml/j
+ackson/databind/SerializerProvider', 'com/fasterxml/jackson/dataformat/xml/ser/T
+oXmlGenerator', '[Lcom/fasterxml/jackson/databind/ser/BeanPropertyWriter;', 'com
+/fasterxml/jackson/databind/ser/PropertyFilter', integer, integer, integer, '[Lj
+avax/xml/namespace/QName;', integer, integer, 'com/fasterxml/jackson/databind/se
+r/BeanPropertyWriter' }
+    stack: { 'com/fasterxml/jackson/databind/ser/PropertyFilter', 'java/lang/Obj
+ect', 'com/fasterxml/jackson/dataformat/xml/ser/ToXmlGenerator', 'com/fasterxml/
+jackson/databind/SerializerProvider', 'com/fasterxml/jackson/databind/ser/BeanPr
+opertyWriter' }
+  Bytecode:
+    0x0000000: 2cc1 0016 9a00 0b2a 2b2c 2db7 002b b12c
+    0x0000010: c000 163a 042a b400 04c6 0013 2db6 0018
+    0x0000020: c600 0c2a b400 043a 05a7 0009 2ab4 0002
+    0x0000030: 3a05 2a2d 2ab4 002c 2bb6 002d 3a06 1906
+    0x0000040: c700 0b2a 2b2c 2db6 002e b119 04b4 0019
+    0x0000050: 3607 2ab4 0006 3608 1508 9e00 0919 0404
+    0x0000060: b600 1a2a b400 1136 092a b400 083a 0a03
+    0x0000070: 360b 1905 be36 0c15 0b15 0ca2 0052 150b
+    0x0000080: 1508 a000 1515 0799 000a 2ab6 001b 9a00
+    0x0000090: 0919 0403 b600 1a15 0b15 09a0 0009 1904
+    0x00000a0: 04b6 001c 1904 190a 150b 32b6 001d 1905
+    0x00000b0: 150b 323a 0d19 0dc6 0010 1906 2b19 042d
+    0x00000c0: 190d b900 2f05 0084 0b01 a7ff ad2a b400
+    0x00000d0: 1fc6 0014 1904 03b6 001a 2ab4 001f 2b19
+    0x00000e0: 042d b600 20a7 0061 3a0c 150b 1905 bea0
+    0x00000f0: 0008 1222 a700 0b19 0515 0b32 b600 0f3a
+    0x0000100: 0d2a 2d19 0c2b 190d b600 23a7 003b 3a0c
+    0x0000110: bb00 2559 1226 190c b700 303a 0d15 0b19
+    0x0000120: 05be a000 0812 22a7 000b 1905 150b 32b6
+    0x0000130: 000f 3a0e 190d bb00 2859 2b19 0eb7 0029
+    0x0000140: b600 2a19 0dbf b1
+  Exception Handler Table:
+    bci [114, 229] => handler: 232
+    bci [114, 229] => handler: 270
+  Stackmap Table:
+    same_frame(@15)
+    append_frame(@44,Object[#131])
+    append_frame(@50,Object[#94])
+    append_frame(@75,Object[#144])
+    append_frame(@99,Integer,Integer)
+    full_frame(@119,{Object[#92],Object[#132],Object[#133],Object[#134],Object[#
+131],Object[#94],Object[#144],Integer,Integer,Integer,Object[#98],Integer,Intege
+r},{})
+    same_frame(@145)
+    same_frame(@151)
+    same_frame(@164)
+    same_frame(@199)
+    chop_frame(@205,1)
+    same_frame(@229)
+    same_locals_1_stack_item_frame(@232,Object[#135])
+    append_frame(@247,Object[#135])
+    same_locals_1_stack_item_frame(@255,Object[#97])
+    full_frame(@270,{Object[#92],Object[#132],Object[#133],Object[#134],Object[#
+131],Object[#94],Object[#144],Integer,Integer,Integer,Object[#98],Integer},{Obje
+ct[#136]})
+    append_frame(@298,Object[#136],Object[#137])
+    same_locals_1_stack_item_frame(@306,Object[#97])
+    chop_frame(@326,2)
+
+        at com.fasterxml.jackson.dataformat.xml.ser.XmlBeanSerializerModifier.ch
+angeProperties(XmlBeanSerializerModifier.java:47)
+        at com.fasterxml.jackson.databind.ser.BeanSerializerFactory.constructBea
+nSerializer(BeanSerializerFactory.java:384)
+        at com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findBeanSeri
+alizer(BeanSerializerFactory.java:272)
+        at com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSeria
+lizer2(BeanSerializerFactory.java:217)
+        at com.fasterxml.jackson.databind.ser.BeanSerializerFactory.createSerial
+izer(BeanSerializerFactory.java:152)
+        at com.fasterxml.jackson.databind.SerializerProvider._createUntypedSeria
+lizer(SerializerProvider.java:873)
+        at com.fasterxml.jackson.databind.SerializerProvider._createAndCacheUnty
+pedSerializer(SerializerProvider.java:852)
+        at com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer
+(SerializerProvider.java:428)
+        at com.fasterxml.jackson.databind.ser.std.AsArraySerializerBase.createCo
+ntextual(AsArraySerializerBase.java:138)
+        at com.fasterxml.jackson.databind.SerializerProvider._handleContextual(S
+erializerProvider.java:906)
+        at com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer
+(SerializerProvider.java:444)
+        at com.fasterxml.jackson.databind.SerializerProvider.findTypedValueSeria
+lizer(SerializerProvider.java:523)
+        at com.fasterxml.jackson.databind.ObjectWriter._prefetchRootSerializer(O
+bjectWriter.java:777)
+        at com.fasterxml.jackson.databind.ObjectWriter.<init>(ObjectWriter.java:
+122)
+        at com.fasterxml.jackson.databind.ObjectMapper.writerWithType(ObjectMapp
+er.java:2303)
+        at org.restlet.ext.jackson.JacksonRepresentation.createObjectWriter(Jack
+sonRepresentation.java:267)
+        at org.restlet.ext.jackson.JacksonRepresentation.getObjectWriter(Jackson
+Representation.java:351)
+        at org.restlet.ext.jackson.JacksonRepresentation.write(JacksonRepresenta
+tion.java:464)
+        at org.restlet.engine.adapter.ServerCall.writeResponseBody(ServerCall.ja
+va:513)
+        at org.restlet.engine.adapter.ServerCall.sendResponse(ServerCall.java:45
+7)
+        at org.restlet.engine.adapter.ServerAdapter.commit(ServerAdapter.java:18
+7)
+        at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.j
+ava:144)
+        at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelp
+er.java:64)
+        at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+        at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+        at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+        at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Sou
+rce)
+        at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+        at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.lang.Thread.run(Unknown Source)
+Unable to send error response
+
+java.io.IOException: headers already sent
+        at sun.net.httpserver.ExchangeImpl.sendResponseHeaders(Unknown Source)
+        at sun.net.httpserver.HttpExchangeImpl.sendResponseHeaders(Unknown Sourc
+e)
+        at org.restlet.engine.connector.HttpExchangeCall.writeResponseHead(HttpE
+xchangeCall.java:161)
+        at org.restlet.engine.adapter.ServerCall.sendResponse(ServerCall.java:45
+2)
+        at org.restlet.engine.adapter.ServerAdapter.commit(ServerAdapter.java:20
+3)
+        at org.restlet.engine.adapter.HttpServerHelper.handle(HttpServerHelper.j
+ava:144)
+        at org.restlet.engine.connector.HttpServerHelper$1.handle(HttpServerHelp
+er.java:64)
+        at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+        at sun.net.httpserver.AuthFilter.doFilter(Unknown Source)
+        at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+        at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(Unknown Sou
+rce)
+        at com.sun.net.httpserver.Filter$Chain.doFilter(Unknown Source)
+        at sun.net.httpserver.ServerImpl$Exchange.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.lang.Thread.run(Unknown Source)
+2016-02-02      11:49:41        0:0:0:0:0:0:0:1 -       -       10000   GET
+/favicon.ico    -       404     -       0       2       http://localhost:10000
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrom
+e/47.0.2526.111 Safari/537.36 OPR/34.0.2036.50  -
