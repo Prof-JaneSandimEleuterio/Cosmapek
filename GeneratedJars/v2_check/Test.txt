@@ -1,0 +1,6 @@
+http://localhost:1723/v1/companies/1000/products/
+http://localhost:1723/v1/companies/1000/operationHour/
+http://localhost:1723/v1/companies?longitude=-10&latitude=-20&num=20
+
+http://192.168.0.104:3389/v1/companies/"+companyId+"/operationHour/
+"http://192.168.0.104:9418/v1/companies?longitude&latitude&num")

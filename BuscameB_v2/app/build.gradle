@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc3"
+
+    defaultConfig {
+        applicationId "unicamp.buscame"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'plugin.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/org.sat4j.core.jar')
+    compile files('libs/org.sat4j.pb.jar')
+    compile files('libs/com.google.gson.jar')
+    compile files('libs/org.restlet.jar')
+    compile files('libs/org.restlet.ext.jackson.jar')
+    compile 'com.google.android.gms:play-services:7.8.0'
+    compile files('libs/org.restlet.ext.nio.jar')
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <componets>
+        <!--static mapekcosmos.components -->
+        <component name="Controller" feature="Buscame" isSensor="false" orderT="1"></component>
+        <component name="Friend" feature="Buscame" isSensor="false" orderT="2"></component>
+        <component name="UI" feature="Buscame" isSensor="false" orderT="3"></component>
+        <component name="Map" feature="Buscame" isSensor="false" orderT="4"></component>
+        <!--dynamic mapekcosmos.components -->
+        <component name="PersonA" feature="PersonServiceA" isSensor="false" orderT="5"></component>
+        <component name="LocalizationA" feature="LocalizationServiceA" isSensor="false" orderT="6"></component>
+        <component name="PersonB" feature="PersonServiceB" isSensor="false" orderT="7"></component>
+        <component name="LocalizationB" feature="LocalizationServiceB" isSensor="false" orderT="8"></component>
+        <component name="PersonC" feature="PersonServiceC" isSensor="false" orderT="9"></component>
+        <component name="LocalizationC" feature="LocalizationServiceC" isSensor="false" orderT="10"></component>
+        <!-- mapekcosmos.sensors-->
+        <component name="SensorPersonA" feature="PersonServiceA" isSensor="true" orderT="11"></component>
+        <component name="SensorLocalizationA" feature="LocalizationServiceA" isSensor="true" orderT="12"></component>
+        <component name="SensorPersonB" feature="PersonServiceB" isSensor="true" orderT="13"></component>
+        <component name="SensorLocalizationB" feature="LocalizationServiceB" isSensor="true" orderT="14"></component>
+        <component name="SensorPersonC" feature="PersonServiceC" isSensor="true" orderT="15"></component>
+        <component name="SensorLocalizationC" feature="LocalizationServiceC" isSensor="true" orderT="16"></component>
+
+    </componets>
+    <mapekcosmos.features>
+        <feature name="APP"></feature>
+        <feature name="Buscame"></feature>
+        <feature name="Person"></feature>
+        <feature name="PersonServiceA"></feature>
+        <feature name="PersonServiceB"></feature>
+        <feature name="PersonServiceC"></feature>
+        <feature name="Localization"></feature>
+        <feature name="LocalizationServiceA"></feature>
+        <feature name="LocalizationServiceB"></feature>
+        <feature name="LocalizationServiceC"></feature>
+    </mapekcosmos.features>
+    <!-- origin has the name of the component not of the feature -->
+    <!-- Destination has the name of the component not of the feature -->
+    <mapekcosmos.connectors>
+        <!-- mapekcosmos.connectors are also mapekcosmos.components-->
+        <connector name="conn_PersonA_Friend" origin="PersonA" destination="Friend" orderT="17"></connector>
+        <connector name="conn_PersonB_Friend" origin="PersonB" destination="Friend" orderT="18"></connector>
+        <connector name="conn_PersonC_Friend" origin="PersonC" destination="Friend" orderT="19"></connector>
+        <connector name="conn_LocalizationA_Controller" origin="LocalizationA" destination="Controller" orderT="20"></connector>
+        <connector name="conn_LocalizationB_Controller" origin="LocalizationB" destination="Controller" orderT="21"></connector>
+        <connector name="conn_LocalizationC_Controller" origin="LocalizationC" destination="Controller" orderT="22"></connector>
+
+        <connector name="conn_Map_UI" origin="Map" destination="UI" orderT="23"></connector>
+        <connector name="conn_UI_Controller" origin="UI" destination="Controller" orderT="24"></connector>
+        <connector name="conn_Friend_Controller" origin="Friend" destination="Controller" orderT="25"></connector>
+
+        <connector name="conn_PersonA_SensorPersonA" origin="PersonA" destination="SensorPersonA" orderT="26"></connector>
+        <connector name="conn_PersonB_SensorPersonB" origin="PersonB" destination="SensorPersonB" orderT="27"></connector>
+        <connector name="conn_PersonC_SensorPersonC" origin="PersonC" destination="SensorPersonC" orderT="28"></connector>
+        <connector name="conn_LocalizationA_SensorLocalizationA" origin="LocalizationA" destination="SensorLocalizationA" orderT="29"></connector>
+        <connector name="conn_LocalizationB_SensorLocalizationB" origin="LocalizationB" destination="SensorLocalizationB" orderT="30"></connector>
+        <connector name="conn_LocalizationC_SensorLocalizationC" origin="LocalizationC" destination="SensorLocalizationC" orderT="31"></connector>
+
+        <connector name="conn_Sensors_SensorLocalizationA" origin="Sensors" destination="SensorLocalizationA" orderT="32"></connector>
+        <connector name="conn_Sensors_SensorLocalizationB" origin="Sensors" destination="SensorLocalizationB" orderT="33"></connector>
+        <connector name="conn_Sensors_SensorLocalizationC" origin="Sensors" destination="SensorLocalizationC" orderT="34"></connector>
+        <connector name="conn_Sensors_SensorPersonA" origin="Sensors" destination="SensorPersonA" orderT="35"></connector>
+        <connector name="conn_Sensors_SensorPersonB" origin="Sensors" destination="SensorPersonB" orderT="36"></connector>
+        <connector name="conn_Sensors_SensorPersonC" origin="Sensors" destination="SensorPersonC" orderT="37"></connector>
+    </mapekcosmos.connectors>
+</config>

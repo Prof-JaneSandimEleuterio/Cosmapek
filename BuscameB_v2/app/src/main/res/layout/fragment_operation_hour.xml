@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" tools:context="unicamp.buscame.ui.core.frag.OperationHour"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:background="#4129ff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="100dp" android:layout_height="match_parent"
+        android:id="@+id/frag_hour_Opening"
+        android:layout_gravity="right"
+        android:background="#fffdf9" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frag_hour_Ending"
+        android:layout_gravity="left"
+        android:background="#f6f8ff" />
+
+</FrameLayout>
+

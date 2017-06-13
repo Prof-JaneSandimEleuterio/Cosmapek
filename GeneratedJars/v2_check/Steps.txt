@@ -1,0 +1,16 @@
+To generate a jar file in this project ( Intellij )
+FILE|Project Structure| Artifacts
+
+ApiBuscame_A 1723
+ApiBuscame_B 10000
+ApiBuscame_C 27070
+ApiBuscame_D 9418
+ApiBuscame_E 9999
+ApiBuscame_F 5228
+ApiBuscame_G 5222
+ApiBuscame_H 3389
+
+Delete the manifest and then change the DBconfiguration.
+Produce artifact.
+
+

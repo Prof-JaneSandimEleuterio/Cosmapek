@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <componets>
+        <!--static components -->
+        <component name="Controller" feature="Buscame" isSensor="false" orderT="149"></component>
+        <component name="Company" feature="Buscame" isSensor="false" orderT="141"></component>
+        <component name="Ui" feature="Buscame" isSensor="false" orderT="147"></component>
+		<component name="Client" feature="Buscame" isSensor="false" orderT="144"></component>
+        <!--dynamic components -->
+		<component name="Configuration" feature="ConfigurationServiceA" isSensor="false" orderT="132"></component> 
+		<component name="ConfigurationB" feature="ConfigurationServiceB" isSensor="false" orderT="137"></component> 
+		
+        <component name="Product" feature="ProductServiceA" isSensor="false" orderT="102"></component>      
+        <component name="ProductB" feature="ProductServiceB" isSensor="false" orderT="107"></component>
+		<component name="ProductC" feature="ProductServiceC" isSensor="false" orderT="112"></component> 
+		
+		<component name="Localization" feature="LocalizationServiceA" isSensor="false" orderT="117"></component>
+        <component name="LocalizationB" feature="LocalizationServiceB" isSensor="false" orderT="122"></component>
+        <component name="LocalizationC" feature="LocalizationServiceC" isSensor="false" orderT="127"></component>
+		<!--Special cases -->
+		<component name="Conn_sensors_configurationSensor" feature="ConfigurationServiceA" orderT="131"></component>
+		<component name="Conn_sensors_configurationBSensor" feature="ConfigurationServiceB" orderT="136"></component>
+		<component name="Conn_sensors_localizationSensor" feature="LocalizationServiceA" orderT="116"></component>
+        <component name="Conn_sensors_localizationBSensor" feature="LocalizationServiceB" orderT="121"></component>
+        <component name="Conn_sensors_localizationCSensor" feature="LocalizationServiceC" orderT="126"></component>
+        <component name="Conn_sensors_productSensor" feature="ProductServiceA" orderT="101"></component>
+		<component name="Conn_sensors_productBSensor" feature="ProductServiceB" orderT="106"></component>
+        <component name="Conn_sensors_productCSensor" feature="ProductServiceC" orderT="111"></component>
+		
+        <!-- sensors-->
+        <component name="ConfigurationSensor" feature="ConfigurationServiceA" isSensor="true" orderT="134"></component>
+		<component name="ConfigurationBSensor" feature="ConfigurationServiceB" isSensor="true" orderT="139"></component>
+		
+        <component name="LocalizationSensor" feature="LocalizationServiceA" isSensor="true" orderT="119"></component>
+		<component name="LocalizationBSensor" feature="LocalizationServiceB" isSensor="true" orderT="124"></component>
+		<component name="LocalizationCSensor" feature="LocalizationServiceC" isSensor="true" orderT="129"></component>
+		
+        <component name="ProductSensor" feature="ProductServiceA" isSensor="true" orderT="104"></component>
+		<component name="ProductBSensor" feature="ProductServiceB" isSensor="true" orderT="109"></component>
+		<component name="ProductCSensor" feature="ProductServiceC" isSensor="true" orderT="114"></component>
+	
+
+		
+    </componets>
+    <features>
+        <feature name="APP"></feature>
+        <feature name="Buscame"></feature>
+        <feature name="Product"></feature>
+        <feature name="ProductServiceA"></feature>
+        <feature name="ProductServiceB"></feature>
+        <feature name="ProductServiceC"></feature>
+        <feature name="Localization"></feature>
+        <feature name="LocalizationServiceA"></feature>
+        <feature name="LocalizationServiceB"></feature>
+        <feature name="LocalizationServiceC"></feature>
+		<feature name="Configuration"></feature>
+        <feature name="ConfigurationServiceA"></feature>
+        <feature name="ConfigurationServiceB"></feature>
+    </features>
+    <!-- origin has the name of the component not of the feature -->
+    <!-- Destination has the name of the component not of the feature -->
+    <connectors>
+        <!-- mapekcosmos.connectors are also mapekcosmos.components-->
+		<connector name="Conn_ui_controller" origin="Ui" destination="Controller" orderT="148"></connector>	
+        <connector name="Conn_client_controller" origin="Client" destination="Controller" orderT="146"></connector>
+        <connector name="Conn_client_ui" origin="Client" destination="Ui" orderT="145"></connector>
+        <connector name="Conn_company_controller" origin="Company" destination="Controller" orderT="142"></connector>
+        <connector name="Conn_company_ui" origin="Company" destination="Ui" orderT="143"></connector>
+		
+        <connector name="Conn_configuration_company" origin="Configuration" destination="Company" orderT="135"></connector>
+        <connector name="Conn_configuration_configurationSensor" origin="Configuration" destination="ConfigurationSensor" orderT="133"></connector>       
+		<connector name="Conn_configurationB_company" origin="ConfigurationB" destination="Company" orderT="140"></connector>
+        <connector name="Conn_configurationB_configurationBSensor" origin="ConfigurationB" destination="ConfigurationBSensor" orderT="138"></connector>
+
+        <connector name="Conn_localization_company" origin="Localization" destination="Company" orderT="120"></connector>
+        <connector name="Conn_localization_localizationSensor" origin="Localization" destination="LocalizationSensor" orderT="118"></connector>
+        <connector name="Conn_localizationB_company" origin="LocalizationB" destination="Company" orderT="125"></connector>
+        <connector name="Conn_localizationB_localizationBSensor" origin="LocalizationB" destination="LocalizationBSensor" orderT="123"></connector>
+        <connector name="Conn_localizationC_company" origin="LocalizationC" destination="Company" orderT="130"></connector>
+        <connector name="Conn_localizationC_localizationCSensor" origin="LocalizationC" destination="LocalizationCSensor" orderT="128"></connector>
+
+        <connector name="Conn_product_company" origin="Product" destination="Company" orderT="105"></connector>
+        <connector name="Conn_product_productSensor" origin="Product" destination="ProductSensor" orderT="103"></connector>
+        <connector name="Conn_productB_company" origin="ProductB" destination="Company" orderT="110"></connector>
+        <connector name="Conn_productB_productBSensor" origin="ProductB" destination="ProductBSensor" orderT="108"></connector>
+        <connector name="Conn_productC_company" origin="ProductC" destination="Company" orderT="115"></connector>
+        <connector name="Conn_productC_productCSensor" origin="ProductC" destination="ProductCSensor" orderT="113"></connector>
+
+    </connectors>
+</config>

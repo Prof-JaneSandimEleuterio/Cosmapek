@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="APP">
+				<and mandatory="true" name="Buscame">
+					<alt mandatory="true" name="Product">
+						<feature mandatory="true" name="ProductServiceA"/>
+						<feature mandatory="true" name="ProductServiceB"/>
+						<feature mandatory="true" name="ProductServiceC"/>
+					</alt>
+					<alt mandatory="true" name="Localization">
+						<feature mandatory="true" name="LocalizationServiceA"/>
+						<feature mandatory="true" name="LocalizationServiceB"/>
+						<feature mandatory="true" name="LocalizationServiceC"/>
+					</alt>
+					<alt mandatory="true" name="Configuration">
+						<feature mandatory="true" name="ConfigurationServiceA"/>
+						<feature mandatory="true" name="ConfigurationServiceB"/>
+					</alt>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<imp>
+					<var>LocalizationServiceA</var>
+					<var>ProductServiceA</var>
+				</imp>
+			</rule>
+			<rule>
+				<imp>
+					<var>LocalizationServiceB</var>
+					<var>ProductServiceB</var>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
+
